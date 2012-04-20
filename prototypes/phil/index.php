@@ -36,11 +36,11 @@ $html_classes = implode(' ', $html_classes);
 
   	</header>
 
-  	<section class="workout fixed left list js-droppable js-sortable">
+  	<section class="workout fixed left list js-workout js-droppable js-sortable">
 
   	</section>
 
-  	<section class="exercises left">
+  	<section class="exercises left js-exercises">
   		<div class="list">
 	  		<?php for($i = 0; $i < 300; $i++): ?>
 	  		<div class="listitem left js-draggable js-listitem">

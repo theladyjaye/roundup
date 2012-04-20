@@ -6,6 +6,8 @@ $(function() {
 	$.$sortable = $('.js-sortable');
 	$.$draggable = $('.js-draggable');
 	$.$droppable = $('.js-droppable');
+	$.$workout = $('.js-workout');
+	$.$exercises = $('.js-exercises');
 
 
 	// draggable items
@@ -28,6 +30,7 @@ $(function() {
 	});
 
 	$.Body.on('click', '.js-delete', delete_item);
+	$.Window.on('resize', on_resize).resize();
 
 	sortable();
 });
@@ -60,4 +63,9 @@ function sortable()
 		revertDuration: 250,
 		revertEasing: 'easeOutBack'
 	}).disableSelection();
+}
+
+function on_resize()
+{
+	$.$exercises.width($.Window.width() - $.$workout.outerWidth(true));
 }
