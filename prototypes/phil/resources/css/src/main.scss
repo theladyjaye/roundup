@@ -1,0 +1,29 @@
+@import "config/config";
+@import "base/h5bp";
+@import "base/utils";
+@import "base/arrows";
+@import "base/mixins";
+@import "components/list/list";
+@import "components/badge";
+
+body {background: $BODY_BACKGROUND; color: $BODY_COLOR; overflow-y: scroll}
+a {color: #ccc; text-decoration: none; @include transition();
+	&:hover {color: #666}
+	&:active {margin-top: 1px}
+}
+
+.workout {width: 240px; padding: 21px 0; top: -1px; height: 1000px; @include boxshadow(rgba(0, 0, 0, 0.2), 0, 0, 5px, inset); border-right: 1px solid #fff; overflow-y: scroll;
+
+	.delete {display: block}
+
+	.placeholder,
+	.listitem {margin-left: 20px; margin-right: 0}
+}
+
+
+.exercises {width: 83%; height: 100%;
+	.list {margin-top: 20px; margin-left: 50px}
+}
+
+.ui-state-placeholder {@include opacity(0.5);}
+.ui-draggable {cursor: move}

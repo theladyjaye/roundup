@@ -1,0 +1,19 @@
+.badge {position: absolute; top: 0; left: 10px; width: 16px; height: 20px; @include opacity(0.8);
+	.arrow {position: absolute; bottom: -8px; left: 0}
+
+	&.red {background-color: $red;
+		.arrow {border-top-color: $red}
+	}
+	&.blue {background-color: $blue;
+		.arrow {border-top-color: $blue}
+	}
+	&.green {background-color: $green;
+		.arrow {border-top-color: $green}
+	}
+	&.purple {background-color: $purple;
+		.arrow {border-top-color: $purple}
+	}
+	&.orange {background-color: $orange;
+		.arrow {border-top-color: $orange}
+	}
+}

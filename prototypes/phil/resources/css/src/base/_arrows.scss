@@ -1,0 +1,41 @@
+$ARROW_COLOR: #000;
+$ARROW_SIZE: 8px;
+
+.arrow-up,
+.arrow-right,
+.arrow-down,
+.arrow-left {width: 0; height: 0; line-height: 0; display: inline-block}
+
+/* ▴ */
+.arrow-up {border-left: $ARROW_SIZE solid transparent; border-right: $ARROW_SIZE solid transparent; border-bottom: $ARROW_SIZE solid $ARROW_COLOR}
+
+/* ▸ */
+.arrow-right {border-top: $ARROW_SIZE solid transparent; border-bottom: $ARROW_SIZE solid transparent; border-right:$ARROW_SIZE solid $ARROW_COLOR}
+
+/* ▾ */
+.arrow-down {border-left: $ARROW_SIZE solid transparent; border-right: $ARROW_SIZE solid transparent; border-top: $ARROW_SIZE solid $ARROW_COLOR}
+
+/* ◂ */
+.arrow-left {border-top: $ARROW_SIZE solid transparent; border-bottom: $ARROW_SIZE solid transparent; border-left: $ARROW_SIZE solid $ARROW_COLOR}
+
+
+/* IE6 Fix */
+//.ie6 .arrow-up,
+//.ie6 .arrow-right,
+//.ie6 .arrow-down,
+//.ie6 .arrow-left {font-size: 0}
+
+/* IE6 Transparency Fix */
+//.arrow-up,
+//.arrow-down {
+//    _border-right-color: $ARROW_COLOR;
+//    _border-left-color: $ARROW_COLOR;
+//    _filter: chroma(color=$ARROW_COLOR)
+//}
+
+//.arrow-right,
+//.arrow-left {
+//    _border-top-color: $ARROW_COLOR;
+//    _border-bottom-color: $ARROW_COLOR;
+//    _filter: chroma(color=$ARROW_COLOR)
+//}

@@ -1,0 +1,7 @@
+@import "listitem";
+
+.list {float: left;
+	&.fixed {}
+
+	.placeholder {@extend .listitem; @extend .left; @include opacity(0.5);}
+}
